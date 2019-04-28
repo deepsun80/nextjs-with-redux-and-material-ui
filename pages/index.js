@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
@@ -20,7 +20,7 @@ const styles = theme => ({
   }
 })
 
-class Index extends PureComponent {
+class Index extends Component {
   static getInitialProps ({ store, isServer }) {
     store.dispatch(increment(isServer))
 
