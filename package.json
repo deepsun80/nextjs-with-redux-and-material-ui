@@ -2,22 +2,24 @@
   "name": "with-redux-wrapper-and-material-ui",
   "version": "1.0.0",
   "dependencies": {
-    "@material-ui/core": "3.7.1",
-    "@material-ui/icons": "3.0.2",
-    "jss": "9.8.7",
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "jss": "latest",
     "next": "latest",
     "next-redux-wrapper": "latest",
-    "react": "16.7.0",
-    "react-dom": "16.7.0",
+    "react": "latest",
+    "react-dom": "latest",
     "react-jss": "8.6.1",
-    "react-redux": "6.0.0",
-    "redux": "4.0.1",
-    "redux-thunk": "2.3.0"
+    "react-redux": "latest",
+    "redux": "latest",
+    "redux-thunk": "latest"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export",
+    "netlify": "npm run build && npm run export"
   },
   "devDependencies": {
     "redux-devtools-extension": "2.13.7"
